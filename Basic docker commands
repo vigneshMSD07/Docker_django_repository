@@ -15,3 +15,8 @@ docker run -v <host path>:<container path> <container path>
 creating a common volume and linking it with multiple container
 docker volume create <volumename>
 docker run -v <volumename>:<vontainerpath> <containerid>
+
+#logs
+docker logs <conatinerid>
+#for continious monitoring of logs
+docker -f logs <containerid>
