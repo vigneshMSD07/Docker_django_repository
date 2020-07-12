@@ -1,4 +1,5 @@
 #docker compose is used to run multiple container services on a single go and alos container can be linked together
+#the containers inside the compose can communicate with each other regardless of their host network
 
 version : '3.1'
 
