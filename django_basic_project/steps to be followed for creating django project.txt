@@ -1,0 +1,19 @@
+Following things should be done in terminal(in Pycharm)
+
+step 1: install django
+
+Step 2: django-admin startproject <Project-name>
+
+Step 3: cd <project-name> (make sure you are in correct path)
+
+Step 4: python manage.py runserver
+
+Boom!!!! basic django page has been launched and it can be accessed via http://127.0.0.1:8000/
+
+will be getting below msg:
+It worked!
+Congratulations on your first Django-powered page.
+Next, start your first app by running python manage.py startapp [app_label].
+
+You're seeing this message because you have DEBUG = True
+in your Django settings file and you haven't configured any URLs. Get to work!
