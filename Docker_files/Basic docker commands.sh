@@ -1,5 +1,5 @@
 Linking 2 containers: 
-container 1: mysql
+container 1: test_sql
 container2: adminer(b1c6e1579623)
 Cmd: docker run -it --link "test_sql:sql" -p 8080:8080 b1c6e1579623
 
