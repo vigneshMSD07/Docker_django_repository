@@ -1,0 +1,14 @@
+#how can create a  image of our django  project
+
+add this line to the docker file
+FROM django:onbuild
+
+add the above docker file to the root folder of the application.
+
+This onbuild command will do following things:
+will COPY . /usr/src/app, 
+RUN pip install, EXPOSE 8000, and 
+set the default command to python manage.py runserver
+
+
+Working on this, will create a basic app and host it using docker.
