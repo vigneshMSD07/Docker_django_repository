@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 
-driver = webdriver.Chrome(r"C:\Users\vikky\OneDrive\Desktop\chromedriver.exe")
+driver = webdriver.Chrome(r"C<path>\chromedriver.exe")
 driver.get("http://www.cricbuzz.com")
 driver.maximize_window()
 action = ActionChains(driver)
