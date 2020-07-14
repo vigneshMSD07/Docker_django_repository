@@ -20,3 +20,12 @@ docker run -v <volumename>:<containerpath> <containerid>
 docker logs <conatinerid>
 #for continious monitoring of logs
 docker -f logs <containerid>
+
+#creating a docker network
+docker network create <network name>
+
+#linking a network to a container:
+docker run -d --network <network_name> <image_id>
+
+#linking a netowrk to a running container
+docker network connect <network_name> <container_name>
