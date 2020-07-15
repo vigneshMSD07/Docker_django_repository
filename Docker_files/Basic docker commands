@@ -20,3 +20,18 @@ docker run -v <volumename>:<containerpath> <containerid>
 docker logs <conatinerid>
 #for continious monitoring of logs
 docker -f logs <containerid>
+
+#creating a docker network
+docker network create <network name>
+
+#linking a network to a container:
+docker run -d --network <network_name> <image_id>
+
+#linking a netowrk to a running container
+docker network connect <network_name> <container_name>
+
+
+#Incase of running a web service conatiner, its always good to check the status periodically
+#need to add below healthchecck line
+EXPOSE 80
+HEALTHCHECK --interval=10s --retries=5 --timeout=20s --start-period=30s CMD curl -I -f "http:localhost:80" || exit1

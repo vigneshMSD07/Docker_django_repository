@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 
-driver =wd.Chrome(r"C:\Users\vikky\OneDrive\Desktop\chromedriver.exe")
+driver =wd.Chrome(r"<path>/chromedriver.exe")
 driver.get('https://www.globalsqa.com/demo-site/draganddrop/')
 driver.maximize_window()
 driver.implicitly_wait(10)
