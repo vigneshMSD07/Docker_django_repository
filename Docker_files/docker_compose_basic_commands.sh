@@ -25,7 +25,8 @@ compose file)
 
 #down
 
-docker compose down(which will stop all the services in compose file)
+docker compose down(which will stop and remove all the services in compose file
+and the associated networks)
 
 #up
 
@@ -37,3 +38,8 @@ docker-compose logs (will give logs of services in the compose file)
 
 docker-compose -f logs <service_name>(will give and follow up the logs of specific
 services)
+
+#stop
+docker-compose stop(will stop all the container in compose file)
+
+docker-compose stop <service_name> (will stop particular service)
