@@ -15,3 +15,35 @@ services:
       - "1005:8080"
     environment:
       PYTHONVAR: welcome
+
+
+#docker compose can be used to build our own docker file
+Step 1:
+Create a dockerfile
+
+Step 2:
+create a dockercompose file to run the created docker file
+version: "3.1"
+
+services:
+  vv_vv:
+    build: .(This will build image from the docker file in the current directory or we have to specify the path of image)
+    environment:
+      TEST_PATH: /home
+    volumes:
+      - vk18:/home
+
+
+volumes:
+  vk18:
+    driver: local
+
+
+
+# if we want the  compose to take all the changes we made after the services are running
+then use below command each time:
+docker-compose up -d --build
+
+docker-compose build command will run all the compose file which are all havig buildcommand.
+
+docker-compose build <service_name> used to build particular service.
