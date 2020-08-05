@@ -6,6 +6,7 @@ import ast
 def test(args):
   for i in args.versions:
     print i
+  return args.versions
   
 def main():
   parser = argparse.ArgumentParser()
