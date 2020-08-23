@@ -1,4 +1,4 @@
-print "welcome to first pipeline execution"
+print "welcome to first pipeline execution and CICD"
 
 import argparse
 import ast
