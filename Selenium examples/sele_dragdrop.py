@@ -16,3 +16,6 @@ driver.switch_to.frame(ele10)
 ele1 = driver.find_element_by_xpath('//li[contains(@class, "ui-widget-content ui-corner-tr ui-draggable ui-draggable-handle")]//img[@src="images/high_tatras_min.jpg"]')
 ele2 = driver.find_element_by_xpath('//div[@id="trash"]')
 ac.drag_and_drop(ele1,ele2).perform()
+
+
+#finally done
