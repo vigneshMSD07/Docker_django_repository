@@ -1,4 +1,4 @@
-print "welcome to first pipeline executiv xvxbvbon and CICD sssxvcxvcxzxcvcxvvss455jvjh5"
+print "welcome to first pipeline executizxfzfdv xvxbvbon and CICD sssxvcxvcxzxcvcxvvss455jvjh5"
 
 import argparse
 import ast
