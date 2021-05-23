@@ -47,3 +47,31 @@ docker-compose up -d --build
 docker-compose build command will run all the compose file which are all havig buildcommand.
 
 docker-compose build <service_name> used to build particular service.
+
+
+example 2:
+version: "3.2"
+
+services:
+  vikky:
+    build: .
+    environment:
+      PYTHON_PATH: /home/test
+    volumes:
+      - type: bind(volume is the local dir)
+        source:
+        target:
+        
+   vikky1:
+       vikky:
+    build: .
+    environment:
+      PYTHON_PATH: /home/test
+    volumes:
+      - type: volume(volume is the docker volume created)
+        source:
+        target:
+        
+        
+volumes:
+  volume_name:
