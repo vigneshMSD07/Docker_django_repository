@@ -44,3 +44,10 @@ docker node promote <node_name>
 
 #the below node is to demote a node from manager to worker
 docker node demote <node_name>
+
+docker swarm join --token SWMTKN-1-4uwmr2o1pp94n4ipu9rzfa0issh3yzr4sxdnx0dhb94uu4fedk-166byuo4bgmue0r9qvnwdzy80 192.168.0.13:2377
+
+docker swarm join-token manager
+
+docker swarm join --token SWMTKN-1-4uwmr2o1pp94n4ipu9rzfa0issh3yzr4sxdnx0dhb94uu4fedk-5qy21ov6pw6nga8k6c89d2nwo 192.168.0.13:2377
+
