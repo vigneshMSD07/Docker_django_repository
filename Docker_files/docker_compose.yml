@@ -75,3 +75,53 @@ services:
         
 volumes:
   volume_name:
+  
+  
+  
+  
+  
+  
+  ex 3:
+version: "3.2"
+ 
+
+services:
+  vikky:
+    image: jenkins:latest
+    environment:
+      - JENKINS_SLAVE_AGENT_PORT: 50001
+    ports:
+      - "8080:8080"
+      - "50001:50001"
+    volumes:
+      - type: volume
+        source: sri
+        target: /var/lib/jenkins
+        
+    uma:
+     build: .
+     environment:
+       PYTHONPATH: /home/vikky
+     volumes:
+       - type: bind
+         source: .
+         target: /home/vikky
+         
+      
+      
+  volumes:
+    sri:
+ 
+ 
+ FROM centos:centos7
+  2 
+  3 RUN yum update
+  4 
+  5 RUN yum -y install python
+  6 
+  7 
+  8 WORKDIR /home/vikky
+  9 
+ 10 CMD "echo welcome"
+ 11 
+ 12 ENTRYPOINT ["python", "sample.py']
